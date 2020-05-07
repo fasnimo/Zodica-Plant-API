@@ -6,4 +6,9 @@ zodiac-js-api => where git repository is init
         zodiac.js
         relation.js
         plant.js
+    
+    AJAX 
+    1. get /index
+    2. post /index/
+    
 

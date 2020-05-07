@@ -3,15 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Your Zodiac Plant</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+    <link rel='stylesheet' href='styles.css'>
   </head>
   <body>
+    <header class='title'>
+      <h1>Your Zodiac Plant</h1>
+    <header>
+    <main> 
+    <nav class='nav-bar navbar-light'>
     <button id='new-relate-btn' class='relate-btn'>
       <span>CREATE RELATIONSHIP</span>
     </button>
-    <div class='relate-card-body'>
+    <div class='collaps narbar=collaps' id='navbarSupportedContent'>
+    <div class='add-relation-container card'>
+      <div class='card-body'>
       <h3>Create Relationship</h3>
       <form class='add-relate-form'>
-        <div class='form-row'>
+
+        <div class='row form-goup'>
           <div class='col'>
             <label for='zodiac-input'>Zodiac Name:</label>
             <input type='text' name='name' value='' placeholder='Zodiac name' class='input-text' id='zodiac-name'>
@@ -41,9 +51,53 @@
             <input type='text' name='name' valu='' placeholder='Plant Name' class='input-text' id='plant-input'>
           </div>
         </div>
+        <input type='submit' name=sumbit value='Create Relation' class='submit btn'>
       </form>
     </div>
-   <!-- Sample text - replace me!  -->
-   <script async src="src/index.js"></script>
+    </div>
+  </div>
+  </nav>
+
+  <div id='container'>
+    <div class='col-sm-12'>
+      <section>
+        <div class='row card'>
+          <div class='card-body'>
+            <div class='form-group text-center'>
+              <h2> <label for='pair-type-select'>What do you want to Relate?</label></h2>
+              <div class='btn-group' role='group' aria-label='Basic example' id='relate-type-select'>
+                <button type='button' class='btn btn-secondary btn-lg' value='zodiac'>Zodiac</button>
+                <button type='button' class='btn btn-secondary btn-lg' value='plant'>Plant</button>
+              </div>
+            </div>
+
+        <div id='relation-dropdowns'>
+          <div id='zodiac-relate'>
+            <h3><label for='zodiac-relate'>Select a Zodiac to See a Plant Relation</label></h3>
+            <select id='zodiac-dropdown' name='selec-zodiac' class='form-control'></select>
+          </div>
+          <div id='plant-relate'>
+            <h3><label for='plant-relate'>Select a Plant to see a Zodiac Relation</label></h3>
+            <select id='plant-dropdown' name='select-plant' class='form-control'></select>
+          </div>
+        </div>
+
+        <div id='selected-relate'>
+          <h3><label for='plant-relate'>Relationships</label></h3>
+          <div id='accordionExample' class='accordion relate-list'>
+          </div>
+        </div>
+          
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+   <script src="src/index.js"></script>
+   <script src="src/appHolder.js"></script>
+   <script src="src/zodiac.js"></script>
+   <script src="src/relation.js"></script>
+   <script src="src/plant.js"></script>
   </body>
 </html>

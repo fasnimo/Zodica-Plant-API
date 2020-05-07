@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Relation.destroy_all
+Zodiac.destroy_all
+Plant.destroy_all
+
 aquarius = Zodiac.create(name: "aquarius", month: "february")
 pisces = Zodiac.create(name: "pisces", month: "march")
 aries = Zodiac.create(name: "aries", month: "april")
