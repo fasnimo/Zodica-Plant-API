@@ -2,9 +2,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Your Zodiac Plant</title>
   </head>
   <body>
+    <button id='new-relate-btn' class='relate-btn'>
+      <span>CREATE RELATIONSHIP</span>
+    </button>
+    <div class='relate-card-body'>
+      <h3>Create Relationship</h3>
+      <form class='add-relate-form'>
+        <div class='form-row'>
+          <div class='col'>
+            <label for='zodiac-input'>Zodiac Name:</label>
+            <input type='text' name='name' value='' placeholder='Zodiac name' class='input-text' id='zodiac-name'>
+          </div>
+          <div class='col'>
+            <label for='zodiac-month'>Zodiac Month:</label>
+            <select id='zodiac-month' name='select-month' class='input-text'>
+              <option value='January'>January</option>
+              <option value='February'>Feduary</option>
+              <option value='March'>March</option>
+              <option value='April'>April</option>
+              <option value='May'>May</option>
+              <option value='June'>June</option>
+              <option value='July'>July</option>
+              <option value='August'>August</option>
+              <option value='September'>September</option>
+              <option value='October'>October</option>
+              <option value='November'>November</option>
+              <option value='December'>December</option>
+            </select>
+          </div>
+        </div>
+
+        <div class='form-row'>
+          <div class='col'>
+            <label for='plant-input'>Plant Name:</label>
+            <input type='text' name='name' valu='' placeholder='Plant Name' class='input-text' id='plant-input'>
+          </div>
+        </div>
+      </form>
+    </div>
    <!-- Sample text - replace me!  -->
    <script async src="src/index.js"></script>
   </body>
