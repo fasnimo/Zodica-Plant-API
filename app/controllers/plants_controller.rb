@@ -17,6 +17,6 @@ class PlantsController < ApplicationController
     private
 
     def plant_params
-        params.require(:plant).permit(:name)
+        params.require(:plant).permit(:kind)
     end 
 end
