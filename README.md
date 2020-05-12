@@ -4,8 +4,7 @@ zodiac-js-api => where git repository is init
     index.html => single page api
         index.js => top-level
         zodiac.js
-        relation.js
-        plant.js
+        comment.js
     
     AJAX 
     1. get /index

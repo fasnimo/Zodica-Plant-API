@@ -1,5 +1,4 @@
 class Zodiac < ApplicationRecord
-    has_many :relations
-    has_many :plants, through: :relations
+    has_many :comments
     validates :name, presence: true
 end

@@ -1,6 +1,5 @@
 class ZodiacSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name, :month, :plants, :relations
+  attributes :name, :comments
 
-  has_many :plants, through: :relations
 end
