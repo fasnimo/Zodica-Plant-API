@@ -23,6 +23,12 @@ scorpio = Zodiac.create(name: "scorpio")
 sagittarius = Zodiac.create(name: "sagittarius")
 capricorn = Zodiac.create(name: "capricorn")
 
+happy = Comment.create(post: "Happy")
+downhearted = Comment.create(post: "Downhearted")
+malicious = Comment.create(post: "Malicious")
+clever = Comment.create(post: "Clever")
+attentive =Comment.create(post: "Attentive")
+
 # pothos= Plant.create(kind: "pothos")
 # zz_plant = Plant.create(kind: "zz plant")
 # succulent = Plant.create(kind: "succulent")
