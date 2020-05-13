@@ -8,6 +8,7 @@
 
 # Relation.destroy_all
 Zodiac.destroy_all
+Comment.destroy_all
 # Plant.destroy_all
 
 aquarius = Zodiac.create(name: "aquarius")
@@ -23,11 +24,11 @@ scorpio = Zodiac.create(name: "scorpio")
 sagittarius = Zodiac.create(name: "sagittarius")
 capricorn = Zodiac.create(name: "capricorn")
 
-happy = Comment.create(post: "Happy")
-downhearted = Comment.create(post: "Downhearted")
-malicious = Comment.create(post: "Malicious")
-clever = Comment.create(post: "Clever")
-attentive =Comment.create(post: "Attentive")
+happy = Comment.create(post: "Happy", zodiac: aquarius)
+downhearted = Comment.create(post: "Downhearted", zodiac: aquarius)
+malicious = Comment.create(post: "Malicious", zodiac: taurus)
+clever = Comment.create(post: "Clever", zodiac: taurus)
+attentive =Comment.create(post: "Attentive", zodiac: taurus)
 
 # pothos= Plant.create(kind: "pothos")
 # zz_plant = Plant.create(kind: "zz plant")
