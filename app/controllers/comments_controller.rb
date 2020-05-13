@@ -16,11 +16,11 @@ class CommentsController < ApplicationController
     end 
 
     def create
-        binding.pry
+        # binding.pry
             # zodiac.comments.build(params[:comments])
             # binding.pry
             # render json: CommentSerializer.new(comment)
-            comment = Comment.new(zodiac_id: comment_params[:zodiac_id], post: comment_params[:post])
+            comment = Comment.new(comment_params)
             if comment.save
             render json: comment
             end
