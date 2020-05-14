@@ -6,7 +6,6 @@ class ZodiacsController < ApplicationController
 
     def show
         zodiac = Zodiac.find(params[:id])
-        # binding.pry
         render json: ZodiacSerializer.new(zodiac)
     end 
 

@@ -22,8 +22,14 @@ class CommentsController < ApplicationController
             # render json: CommentSerializer.new(comment)
             comment = Comment.new(comment_params)
             if comment.save
-            render json: comment
+            render json: CommentSerializer.new(comment)
             end
+    end 
+
+    def destroy
+        comment = Comment.find(params[:id]) #or [:id]
+        comment.destroy
+        # render json: CommentSerializer.new(comment)
     end 
 
     private
