@@ -27,7 +27,7 @@ class CommentsController < ApplicationController
     end 
 
     def destroy
-        comment = Comment.find(params[:id]) #or [:id]
+        comment = Comment.find(params[:id]) #or comment_params
         comment.destroy
         # render json: CommentSerializer.new(comment)
     end 
