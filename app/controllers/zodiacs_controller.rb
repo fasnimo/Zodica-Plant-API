@@ -9,11 +9,6 @@ class ZodiacsController < ApplicationController
         render json: ZodiacSerializer.new(zodiac)
     end 
 
-    # def create
-    #     zodiac = Zodiac.create(zodiac_params)
-    #     render json: zodiac
-    # end 
-
     private
 
     def zodiac_params
