@@ -9,5 +9,10 @@ zodiac-js-api => where git repository is init
     AJAX 
     1. get /index
     2. post /index/
+
+    Zodiac has_many comments, and comments belongs to zodiac. 
+
+    In this you create and delelte comments for each zodiac.
+
     
 
