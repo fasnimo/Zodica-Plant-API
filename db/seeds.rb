@@ -8,8 +8,6 @@
 
 
 Zodiac.destroy_all
-# Comment.destroy_all
-
 
 aquarius = Zodiac.create(name: "aquarius")
 pisces = Zodiac.create(name: "pisces")
@@ -24,9 +22,4 @@ scorpio = Zodiac.create(name: "scorpio")
 sagittarius = Zodiac.create(name: "sagittarius")
 capricorn = Zodiac.create(name: "capricorn")
 
-# happy = Comment.create(post: "Happy", zodiac: aquarius)
-# downhearted = Comment.create(post: "Downhearted", zodiac: aquarius)
-# malicious = Comment.create(post: "Malicious", zodiac: taurus)
-# clever = Comment.create(post: "Clever", zodiac: taurus)
-# attentive =Comment.create(post: "Attentive", zodiac: taurus)
 
