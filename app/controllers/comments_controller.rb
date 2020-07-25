@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+    # before_action :comment_finder, only: [:show, :edit]
     def index
         if params[:zodiac_id]
             comments = Zodiac.find(params[:zodiac_id]).comments
@@ -12,7 +13,7 @@ class CommentsController < ApplicationController
     end
 
     def show
-        comment = Comment.find(params[:id])
+        # comment = Comment.find(params[:id])
         # render json: CommentSerializer.new(comment) # for serializer with Aysan
         render json: comment
     end 
@@ -24,7 +25,18 @@ class CommentsController < ApplicationController
             # render json: CommentSerializer.new(comment) # for serializer with Aysan
             render json: comment
         end
-    end 
+    end
+    
+    # def edit
+    #     # comment = Comment.find_by(id: params[:id])
+    # end 
+
+    # def update 
+    #     comment = Comment.find(params[:id])
+    #     if comment.update
+    #         render json: comment
+    #     end 
+    # end
 
     def destroy
         comment = Comment.find(params[:id])
@@ -36,4 +48,8 @@ class CommentsController < ApplicationController
     def comment_params
         params.require(:comment).permit(:post, :zodiac_id)
     end
+
+    def comment_finder
+        comment = Comment.find_by(id: params[:id])
+    end 
 end
