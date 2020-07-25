@@ -1,4 +1,5 @@
-class ZodiacSerializer
-  include FastJsonapi::ObjectSerializer
-  attributes :name, :comments
+class ZodiacSerializer < ActiveModel::Serializer
+  # include FastJsonapi::ObjectSerializer
+  attributes :id, :name
+  has_many :comments
 end
