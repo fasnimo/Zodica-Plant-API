@@ -1,13 +1,11 @@
 class ZodiacsController < ApplicationController
     def index
         zodiacs = Zodiac.all
-        # render json: ZodiacSerializer.new(zodiacs)
-        render json: zodiacs #need for when I remove Serializer.
+        render json: zodiacs 
     end
 
     def show
         zodiac = Zodiac.find(params[:id])
-        # render json: ZodiacSerializer.new(zodiac)
         render json: zodiac
     end 
 

@@ -1,5 +1,4 @@
 class CommentSerializer < ActiveModel::Serializer
-  # include FastJsonapi::ObjectSerializer
-  attributes :id, :post, :zodiac_id #removed :zodiac for controlled object JSON
+  attributes :id, :post, :zodiac_id
   belongs_to :zodiac
 end
